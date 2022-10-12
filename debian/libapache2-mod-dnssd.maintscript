@@ -1,0 +1,2 @@
+mv_conffile /etc/apache2/mods-available/mod-dnssd.conf /etc/apache2/mods-available/dnssd.conf
+mv_conffile /etc/apache2/mods-available/mod-dnssd.load /etc/apache2/mods-available/dnssd.load

@@ -1,0 +1,17 @@
+Source: mod-dnssd
+Section: httpd
+Priority: optional
+Maintainer: Regis Boudin <regis@debian.org>
+Uploaders: Sebastien ESTIENNE <sebastien.estienne@gmail.com>
+Build-Depends: debhelper (>= 10), apache2-dev, dh-apache2,libavahi-client-dev (>= 0.6.4), lynx, libapr1-dev
+Standards-Version: 4.1.1
+Homepage: http://0pointer.de/lennart/projects/mod_dnssd/
+
+Package: libapache2-mod-dnssd
+Architecture: any
+Depends: ${shlibs:Depends}, avahi-daemon (>= 0.6.5), ${misc:Depends}
+Description: Zeroconf support for Apache 2 via avahi
+ mod_dnssd is an Apache HTTPD module which adds Zeroconf support 
+ via DNS-SD using Avahi. This allows Apache to advertise itself and the
+ websites available to clients compatible with the protocol.
+

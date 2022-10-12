@@ -1,0 +1,95 @@
+mod-dnssd (0.6-3.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Modernize packaging (Closes: #882779)
+    - Convert to simple dh7 style rules
+    - Bump debhelper compat to 10
+    - Bump Standards-Version to 4.1.1
+    - Build with all hardening flags
+    - Use section httpd instead of net
+    - Use copyright format 1.0
+  * Update port-for-apache2.4.patch with version accepted upstream
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 26 Nov 2017 12:49:30 -0500
+
+mod-dnssd (0.6-3.1) unstable; urgency=low
+
+  * Non-maintainer upload (Closes: #666829)
+  * Add support for Apache 2.4 by using the patch provided by Ondřej Surý.
+  * Make the module run with the changed Apache 2.4 API
+  * Rename Apache configuration files to comply with Apache's packaging
+    policy:
+    - mod-dnssd.conf -> dnssd.conf
+    - mod-dnssd.load -> dnssd.load
+    - Update symlinks when the module was enabled
+  * Bump debhelper dependency, to make sure its maintscript helper is
+    supported which aids for the conffile move.
+
+ -- Arno Töll <arno@debian.org>  Thu, 30 May 2013 19:33:34 +0200
+
+mod-dnssd (0.6-3) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.2. No other change needed.
+  * Add dependency on ${misc:Depends}. 
+  * Add build-arch and build-indep targets.
+
+ -- Regis Boudin <regis@debian.org>  Tue, 26 Jul 2011 22:50:02 +0100
+
+mod-dnssd (0.6-2) unstable; urgency=low
+
+  * Depend on apache2.2-bin instead of apache2.2-common (Closes: #536212).
+  * Bump Standards-Version to 3.8.3
+  * Switch to format 3.0 (quilt)
+
+ -- Regis Boudin <regis@debian.org>  Thu, 12 Nov 2009 20:39:34 +0000
+
+mod-dnssd (0.6-1) unstable; urgency=low
+
+  * New upstream release (Closes: #513954).
+  * Bump Standards-Version to 3.8.0
+  * Reference the Apache 2.0 License file in
+    /usr/share/common-licenses/Apache-2.0 instead of having the whole text
+    copied inside the copyright file.
+  * Update the long description to make lintian happy.
+
+ -- Regis Boudin <regis@debian.org>  Mon, 02 Feb 2009 20:58:26 +0000
+
+mod-dnssd (0.5-1) unstable; urgency=low
+
+  * New upstream release (Closes: #426379, #368486).
+  * Acknowledge NMU. Thanks Joey ! (Closes: #391782, #393012).
+  * Take over maintainership of the package, as agreed with the previous
+    maintainer, who becomes uploader. Many thanks to Sebastien Estienne for his
+    work.
+  * Set the Homepage field in debian/control.
+  * Bump the Standards-Version to 3.7.3
+
+ -- Regis Boudin <regis@debian.org>  Thu, 06 Dec 2007 21:55:31 +0000
+
+mod-dnssd (0.4-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+
+  [ Simon McVittie ]
+  * Alter source to compile with Apache 2.2 (closes: #391782, #393012)
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 15 Oct 2006 16:35:27 -0400
+
+mod-dnssd (0.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Sebastien ESTIENNE <sebastien.estienne@gmail.com>  Sat, 01 Apr 2006 14:39:10 +0200
+
+mod-dnssd (0.3-2) unstable; urgency=low
+
+  * fix prerm and postrm scripts to enable/disable the module
+
+ -- Sebastien ESTIENNE <sebastien.estienne@gmail.com>  Wed, 01 Mar 2006 17:20:52 +0100
+
+mod-dnssd (0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #349419)
+
+ -- Sebastien ESTIENNE <sebastien.estienne@gmail.com>  Tue, 31 Jan 2006 00:04:13 +0100
+

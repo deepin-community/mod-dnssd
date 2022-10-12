@@ -1,0 +1,3 @@
+mod src/.libs/mod_dnssd.so
+mod debian/dnssd.conf
+mod debian/dnssd.load
